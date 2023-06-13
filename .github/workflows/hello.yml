@@ -10,7 +10,4 @@ jobs:
     hello_job:
       runs-on: ubuntu-latest
       steps:
-        - name: Hello
-          uses: ./.github/actions/hello
-          with:
-            message: ${{ inputs.message }}
+        - run: echo ${{ inputs.message }}
